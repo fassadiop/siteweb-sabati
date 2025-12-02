@@ -112,7 +112,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6 md:px-8 text-center">
           <h2 className="font-serif text-4xl mb-8 dark:text-white">Notre Histoire</h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto">
-            Dudam Créations est née d’un héritage rare : celui des toges professorales traditionnelles de Dakar.
+            Sabati Couture est née d’un héritage rare : celui des toges professorales traditionnelles de Dakar.
             Transmis par sa belle-mère, Mme Wone Khar Ndiaye perpétue depuis 2008 un artisanat d’excellence.
           </p>
 
@@ -159,10 +159,11 @@ export default function Home() {
                 Envoyer
               </button>
               <a
-                href="tel:+221000000000"
-                className="px-6 py-3 border rounded inline-flex items-center dark:border-gray-400"
-              >
-                WhatsApp / Tel
+                  href="https://wa.me/22177632691"
+                  target="_blank"
+                  className="px-6 py-3 border rounded inline-flex items-center dark:border-gray-400"
+                >
+                  WhatsApp
               </a>
             </div>
           </form>
