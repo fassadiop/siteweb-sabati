@@ -35,3 +35,7 @@ body {
 
 /* Card radius used for gallery images */
 .card-rounded { border-radius: 14px; }
+
+html.dark {
+  color-scheme: dark;
+}
