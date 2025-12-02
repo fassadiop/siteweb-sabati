@@ -38,11 +38,12 @@ export default function Navbar({ toggleTheme, theme }) {
           </Link>
 
           <button
-            onClick={toggleTheme}
-            className="px-3 py-2 border rounded dark:border-gray-400"
-          >
-            {theme === "light" ? "🌙" : "☀️"}
+              onClick={toggleTheme}
+              className="px-3 py-2 border rounded dark:border-gray-400"
+            >
+              {theme === "light" ? "🌙" : "☀️"}
           </button>
+
         </div>
 
         {/* Mobile */}

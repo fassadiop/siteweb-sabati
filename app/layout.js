@@ -1,7 +1,13 @@
+// 🚫 PAS DE "use client" ICI
+
 import "./globals.css";
-import ClientThemeProvider from "../components/ClientThemeProvider";
+
+// ✔️ Navbar et Footer sont importés normalement : 
+// ils peuvent être client components, c’est autorisé.
+// Next.js encapsule automatiquement.
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
+import ThemeProvider from "components/ThemeProvider"; // pour dark mode (client)
 
 export const metadata = {
   title: "Sabati Couture — Mode et tradition d’exception",
@@ -15,13 +21,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
       <body className="bg-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
-        <ClientThemeProvider>
+        {/* 🚨 TOUT LE CODE CLIENT DOIT ÊTRE DANS CE COMPOSANT */}
+        <ThemeProvider>
           <Navbar />
           <main>{children}</main>
           <Footer />
-        </ClientThemeProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
