@@ -1,8 +1,5 @@
 import "./globals.css";
 
-// ⛔️ NE PAS IMPORTER Navbar ou Footer ici !
-// Sinon Next.js pense que layout.js est un composant client.
-
 export const metadata = {
   title: "Sabati Couture — Mode et tradition d’exception",
   description:
@@ -17,17 +14,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning>
       <body className="bg-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
-        {/* On importe les composants client APRÈS metadata */}
-        {/* On les inclut via une dynamique "client boundary" */}
-        <ClientShell>
+        <ClientWrapper>
           {children}
-        </ClientShell>
+        </ClientWrapper>
       </body>
     </html>
   );
 }
 
-/* -------------------------------------------
-   🔥 Wrapper qui charge Navbar + Footer (client)
--------------------------------------------- */
-import ClientShell from "./client-shell";
+import ClientWrapper from "./client-wrapper";
