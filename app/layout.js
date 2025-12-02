@@ -1,9 +1,7 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import "./globals.css";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
+import { ThemeProvider } from "components/ThemeContext";
 
 export const metadata = {
   title: "Sabati Couture — Mode et tradition d’exception",
@@ -16,37 +14,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const [theme, setTheme] = useState("light");
-
-  // Charger le thème (persisté)
-  useEffect(() => {
-    const saved = localStorage.getItem("theme");
-    if (saved === "dark") {
-      document.documentElement.classList.add("dark");
-      setTheme("dark");
-    }
-  }, []);
-
-  // Basculer le thème
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-
-    localStorage.setItem("theme", newTheme);
-
-    if (newTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  };
-
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
       <body className="bg-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
-        <Navbar toggleTheme={toggleTheme} theme={theme} />
-        <main>{children}</main>
-        <Footer />
+
+        <ThemeProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
+
       </body>
     </html>
   );
