@@ -12,8 +12,6 @@ export default function Navbar() {
   return (
     <nav className="w-full bg-white dark:bg-gray-900 fixed top-0 z-50 shadow-sm">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-
-        {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/images/sabati/logo-sabati.png"
@@ -24,7 +22,6 @@ export default function Navbar() {
           <span className="font-serif text-xl dark:text-white">Sabati Couture</span>
         </Link>
 
-        {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-8 font-medium dark:text-white">
           <Link href="#realisations" className="hover:text-gold">Réalisations</Link>
           <Link href="#services" className="hover:text-gold">Services</Link>
@@ -41,7 +38,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden text-3xl dark:text-white"

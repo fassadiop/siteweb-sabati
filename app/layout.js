@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="fr" suppressHydrationWarning>
       <body className="bg-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
 
+        {/* Le provider EST un Client Component mais wrapped proprement */}
         <ThemeProvider>
           <Navbar />
           <main>{children}</main>
