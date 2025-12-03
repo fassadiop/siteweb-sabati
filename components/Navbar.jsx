@@ -15,13 +15,13 @@ export default function Navbar({ toggleTheme, theme }) {
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/images/sabati/logo-sabati.png"
-            alt="Sabati Couture"
+            alt="Dudam Créations"
             width={48}
             height={48}
           />
-          <span className="font-serif text-xl text-black dark:text-white">
-            Sabati Couture
-          </span>
+          {/* <span className="font-serif text-xl text-black dark:text-white">
+            Dudam Créations
+          </span> */}
         </Link>
 
         {/* Desktop menu */}

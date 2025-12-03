@@ -10,7 +10,7 @@ import Footer from "components/Footer";
 import ThemeProvider from "components/ThemeProvider"; // pour dark mode (client)
 
 export const metadata = {
-  title: "Sabati Couture — Mode et tradition d’exception",
+  title: "Dudam Créations — Mode et tradition d’exception",
   description:
     "Toges magistrales, universitaires et habits d’apparat — confection premium internationale.",
   icons: {

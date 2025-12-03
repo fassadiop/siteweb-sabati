@@ -112,7 +112,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6 md:px-8 text-center">
           <h2 className="font-serif text-4xl mb-8 dark:text-white">Notre Histoire</h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto">
-            Sabati Couture est née d’un héritage rare : celui des toges professorales traditionnelles de Dakar.
+            Dudam Créations est née d’un héritage rare : celui des toges professorales traditionnelles de Dakar.
             Transmis par sa belle-mère, Mme Wone Khar Ndiaye perpétue depuis 2008 un artisanat d’excellence.
           </p>
 
@@ -131,7 +131,7 @@ export default function Home() {
           <h2 className="font-serif text-4xl mb-8 dark:text-white">À propos</h2>
 
           <p className="text-gray-700 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Sabati Couture est une maison spécialisée dans la confection de toges professorales,
+            Dudam Créations est une maison spécialisée dans la confection de toges professorales,
             tenues institutionnelles et uniformes professionnels. Fondée par Mme Wone Khar Ndiaye,
             héritière d’un savoir-faire rare, l’entreprise allie tradition, précision et modernité.
           </p>

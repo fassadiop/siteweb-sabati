@@ -4,7 +4,7 @@ export default function About() {
       <h1 className="font-serif text-4xl text-center mb-10">À propos</h1>
 
       <p className="leading-relaxed text-lg">
-        Sabati Couture est une maison spécialisée dans la confection d'habits d’apparat,
+        Dudam Créations est une maison spécialisée dans la confection d'habits d’apparat,
         de toges magistrales et universitaires. Reconnue pour son excellence et son savoir-faire,
         elle accompagne depuis des années institutions, universités et juridictions.
       </p>

@@ -7,7 +7,7 @@ export default function Hero() {
         {/* Left content */}
         <div className="py-12">
           <h1 className="font-serif hero-title text-5xl md:text-6xl leading-tight text-black">
-            Sabati Couture
+            Dudam Créations
           </h1>
 
           <p className="text-lg md:text-xl text-gray-700 mt-6 max-w-xl">
@@ -46,7 +46,7 @@ export default function Hero() {
         <div className="relative w-full h-96 md:h-[520px] rounded-xl overflow-hidden shadow-xl card-rounded">
             <Image
                 src="/images/sabati/hero.jpeg"
-                alt="Toge Sabati"
+                alt="Toge Dudam Créations"
                 width={550}         // tu peux ajuster cette largeur
                 height={800}        // garder les proportions correctes de l’image
                 className="rounded-xl shadow-xl object-contain"

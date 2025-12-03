@@ -9,7 +9,7 @@ export default function Histoire() {
       <h1 className="font-serif text-4xl mb-10 text-center">Notre Histoire</h1>
 
       <p className="mb-6">
-        <strong>Sabati Couture</strong> est l’histoire d’une passion devenue vocation, 
+        <strong>Dudam Créations</strong> est l’histoire d’une passion devenue vocation, 
         puis d’une vocation devenue métier. Depuis 2008, sa fondatrice, 
         <strong> Mme Wone Khar Ndiaye </strong>, styliste de talent, développe un savoir-faire 
         unique dans la confection de tenues sur mesure.
