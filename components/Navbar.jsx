@@ -14,10 +14,10 @@ export default function Navbar({ toggleTheme, theme }) {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/images/sabati/logo-sabati.png"
+            src="/images/sabati/logo-dudam.png"
             alt="Dudam Créations"
-            width={48}
-            height={48}
+            width={128}
+            height={128}
           />
           {/* <span className="font-serif text-xl text-black dark:text-white">
             Dudam Créations
